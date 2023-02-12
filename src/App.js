@@ -1,6 +1,7 @@
 
 import './App.css';
 import './LoginPage.css';
+import logo from './img/logotipotransparente.png'
 
 import React, { useState } from 'react';
 
@@ -17,9 +18,11 @@ const LoginPage = () => {
 
   return (
     <div className='container'>
-    <div  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-      <div className= '' style={{border: ' 2px solid', borderRadius: '5px'}}>
+    <div  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+      
+    <form className="form" onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+      <img src={logo} className='logo' alt='login de logo'/>
+      <div className= 'login' style={{border: ' 2px solid', borderRadius: '5px'}}>
         <label htmlFor="username">Usuário:</label>
         <input
           type="text"
