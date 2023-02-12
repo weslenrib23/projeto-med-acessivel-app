@@ -16,9 +16,10 @@ const LoginPage = () => {
   };
 
   return (
-    <div className='container' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <div className= ''style={{border: ' 2px solid', borderRadius: '5px'}}>
+    <div className='container'>
+    <div  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+      <div className= '' style={{border: ' 2px solid', borderRadius: '5px'}}>
         <label htmlFor="username">Usuário:</label>
         <input
           type="text"
@@ -38,6 +39,7 @@ const LoginPage = () => {
       </div>
       <button type="submit">Entrar</button>
     </form>
+    </div>
     </div>
   );
 };
