@@ -2,6 +2,7 @@
 import './App.css';
 import './LoginPage.css';
 import logo from './img/logotipotransparente.png'
+import medico from './img/medica.png'
 
 import React, { useState } from 'react';
 
@@ -18,12 +19,13 @@ const LoginPage = () => {
 
   return (
     <div className='container'>
+     <img src={medico} className='medico'/>
     <div  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
       
     <form className="form" onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
       <img src={logo} className='logo' alt='login de logo'/>
-      <div className= 'login' style={{border: ' 2px solid', borderRadius: '5px'}}>
-        <label htmlFor="username">Usuário:</label>
+      <div className= 'login' style={{}}>
+        <label htmlFor="username">Login</label>
         <input
           type="text"
           id="username"
@@ -31,8 +33,8 @@ const LoginPage = () => {
           onChange={(event) => setUsername(event.target.value)}
         />
       </div>
-      <div style={{border: ' 2px solid', borderRadius: '5px'}}>
-        <label htmlFor="password">Senha:</label>
+      <div className= 'login' style={{}}>
+        <label htmlFor="password">Senha</label>
         <input
           type="password"
           id="password"
@@ -40,7 +42,12 @@ const LoginPage = () => {
           onChange={(event) => setPassword(event.target.value)}
         />
       </div>
-      <button type="submit">Entrar</button>
+      <button className='button' type="submit">Entrar</button>
+      <div className='senha'>Esqueceu sua senha?</div>
+      <div className='conta'>
+      <div>Não tem uma conta?</div>
+      <button className= 'cadastrar' type="submit">Cadastrar</button>
+      </div>
     </form>
     </div>
     </div>
