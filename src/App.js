@@ -2,7 +2,7 @@
 import './App.css';
 import './LoginPage.css';
 import logo from './img/logotipotransparente.png'
-import medico from './img/medica.png'
+import fundo from './img/wallpaper.png';
 
 import React, { useState } from 'react';
 
@@ -19,7 +19,6 @@ const LoginPage = () => {
 
   return (
     <div className='container'>
-     <img src={medico} className='medico'/>
     <div  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
       
     <form className="form" onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>

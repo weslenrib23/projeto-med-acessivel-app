@@ -1,7 +1,7 @@
 /* LoginPage.css */
 
 .container {
-  background-color: #13c8b5;
+  background-image: url(./img/wallpaper.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,6 +11,11 @@
 
 }
 
+@font-face{
+    font-family: "Poppins-Regular";
+    src: url('./fonts/Poppins-Regular.ttf');
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -18,6 +23,7 @@
   background-color: white;
   padding: 30px;
   border-radius: 15px;
+  font-family: "Poppins-Regular";
 }
 
 .login{
@@ -34,9 +40,11 @@
 .button{
   background-color: #13c8b5;
   padding: 5px;
-  margin: 15px;
+  width: 105px;
+  margin: 10px;
   border-radius: 5px;
   font-weight: bold;
+  font-family: "Poppins-Regular";
 }
 
 .button:hover{
@@ -61,20 +69,15 @@
 }
 
 .cadastrar{
+  background:#13c8b5;
   padding: 5px;
+  width: 105px;
   margin: 15px;
   border-radius: 5px;
   font-weight: bold;
+  font-family: "Poppins-Regular";
 }
 
 .cadastrar:hover{
-  background: #808080;
-  color: white;
-}
-
-.medico{
-  width: 300px;
-  bottom: 0;
-  position: fixed;
-  float: left;
+  background: white
 }
