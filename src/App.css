@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,94 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* LoginPage.css */
+
+.container {
+  background-image: url(./img/wallpaper.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-around;
+  
+
+}
+
+@font-face{
+    font-family: "Poppins-Regular";
+    src: url('./fonts/Poppins-Regular.ttf');
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  font-family: "Poppins-Regular";
+}
+
+.login{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  
+}
+
+input{
+  border: 2px solid #13c8b5;
+  border-radius: 5px;
+}
+
+.logo{
+  width: 160px;
+}
+
+.button{
+  background-color: #13c8b5;
+  padding: 5px;
+  width: 105px;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Poppins-Regular";
+}
+
+.button:hover{
+  background-color: white;
+}
+
+.senha{
+  font-weight: bold;
+  padding: 20px;
+}
+
+.senha:hover{
+  color: #808080;
+}
+
+.conta{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.cadastrar{
+  background:#13c8b5;
+  padding: 5px;
+  width: 105px;
+  margin: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Poppins-Regular";
+}
+
+.cadastrar:hover{
+  background: white
 }
